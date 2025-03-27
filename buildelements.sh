@@ -14,7 +14,7 @@ running=$(docker container list | grep elementsbuild || :)
 if [ -z "$running" ];then
     docker container stop elementsbuild || :
     docker container rm -f elementsbuild || :
-    docker run -dt --name elementsbuild --privileged -v "$ELEMENTS_SRC":/elements/ ghcr.io/delta1/alpine-guix
+    docker run -dt --name elementsbuild --privileged -v "$ELEMENTS_SRC":/elements/ mercurylayer/alpine-guix:latest
 fi
 
 #if you build a hash instead of a tag, remember to use only the first 12 chars
