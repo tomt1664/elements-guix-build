@@ -12,11 +12,11 @@ on:
         required: true
       ref:
         description: "elements git ref"
-        default: "refs/tags/elements-23.2.7rc5"
+        default: "refs/tags/elements-23.3.0rc7"
         required: true
       tag:
         description: "the build tag"
-        default: "elements-23.2.7rc5"
+        default: "elements-23.3.0rc7"
         required: true
 
 jobs:
